@@ -86,7 +86,7 @@ export default function Header({
                 <div className="header-search">
                     <Select
                         className="variant-select"
-                        placeholder="Search products based on category"
+                        placeholder="Search products based on category..."
                         value={selectedVariant}
                         onChange={onVariantChange}
                         options={options}
