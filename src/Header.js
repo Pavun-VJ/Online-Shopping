@@ -91,7 +91,7 @@ export default function Header({
                         onChange={onVariantChange}
                         options={options}
                     />
-                    <button className="search-btn" onClick={onSearch}>Search</button>
+                    <button className="search-btn" title="Search" onClick={onSearch}>Search</button>
                 </div>
             </header>
 
