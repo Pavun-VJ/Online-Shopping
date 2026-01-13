@@ -10,7 +10,7 @@ const skeletonArray = Array.from({ length: 6 });
   return (
     <div className="rv-container">
       <div className="rv-header">
-        <h4 className="rv-title">Recently Viewed</h4>
+        <h4 className="rv-title">Recently Viewe</h4>
         {items.length > 0 && <span className="rv-count">{items.length} items</span>}
       </div>
 
