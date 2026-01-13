@@ -374,6 +374,7 @@ useEffect(() => {
             type="text"
             maxLength="1"
             className="form-control text-center"
+            // Changes I made
             style={{ width: "40px" }}
             value={phoneOtp[i]}
             onChange={(e) => {
