@@ -54,6 +54,7 @@ export default function ProductGrid({ products, loading, onSelect, onAdd }) {
                 }}
                 title="Add to Cart"
               >
+               {/* Changed */}
                 Add to Cart
               </button>
             </div>
