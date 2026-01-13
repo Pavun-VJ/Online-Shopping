@@ -63,7 +63,7 @@ const skeletonArray = Array.from({ length: 6 });
                     <span className="rv-final">₹{finalPrice.toFixed(0)}</span>
                     {discount > 0 && <span className="rv-mrp">₹{mrp}</span>}
                   </div>
-                  <button className="rv-add-btn" onClick={() => onAdd(productForCart)}>
+                  <button className="rv-add-btn" title="Add" onClick={() => onAdd(productForCart)}>
                     Add
                   </button>
                 </div>

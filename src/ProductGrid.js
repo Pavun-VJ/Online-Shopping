@@ -52,6 +52,7 @@ export default function ProductGrid({ products, loading, onSelect, onAdd }) {
                   e.stopPropagation();
                   onAdd(p);
                 }}
+                title="Add to Cart"
               >
                 Add to Cart
               </button>
