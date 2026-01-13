@@ -86,12 +86,12 @@ export default function Header({
                 <div className="header-search">
                     <Select
                         className="variant-select"
-                        placeholder="Search products"
+                        placeholder="Search products based on category"
                         value={selectedVariant}
                         onChange={onVariantChange}
                         options={options}
                     />
-                    <button className="search-btn" onClick={onSearch}>Search</button>
+                    <button className="search-btn" title="Search" onClick={onSearch}>Search</button>
                 </div>
             </header>
 
