@@ -2,15 +2,6 @@ import React, { useRef } from "react";
 import { bufferToBase64 } from "./imageUtils";
 
 export default function RecentlyViewed({ items, onAdd, loading, onRemove }) {
-  const scrollRef = useRef(null);
-
-  const scroll = (dir) => {
-    if (scrollRef.current) {
-      const { scrollLeft, clientWidth } = scrollRef.current;
-      const scrollTo = dir === "left" ? scrollLeft - clientWidth : scrollLeft + clientWidth;
-      scrollRef.current.scrollTo({ left: scrollTo, behavior: "smooth" });
-    }
-  };
 
 const skeletonArray = Array.from({ length: 6 });
 
@@ -63,7 +54,7 @@ const skeletonArray = Array.from({ length: 6 });
                     <span className="rv-final">₹{finalPrice.toFixed(0)}</span>
                     {discount > 0 && <span className="rv-mrp">₹{mrp}</span>}
                   </div>
-                  <button className="rv-add-btn" onClick={() => onAdd(productForCart)}>
+                  <button className="rv-add-btn" title="Add" onClick={() => onAdd(productForCart)}>
                     Add
                   </button>
                 </div>
